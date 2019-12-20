@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="../src/memory.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../style/skeleton.css">
+    <link rel="stylesheet" href="../style/main.css">
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/animate.min.css">
+
+
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body class= "animated fadeIn slow center">
+    <div class="main-frame">
+      <div class="top-bar">
+        <div class="user">
+          <!--user-->
+          <h1>Welcome, <span id = "changeText" class="innerText" >Username</span> </h1>
+        </div>
+        <div class="buttons">
+          <!-- sys preference -->
+          <button type="button" name="button" class="button">Mini Mode</button>
+          <button type="button" name="button" class="button">Settings</button>
+        </div>
+      </div>
+       <div class="main-div">
+        <div class="left">
+          <div id = "drag" class="todo-list">
+            <!--generic wireframe for a todo-->
+            <div class="button reminder">
+              <div class="complete">
+                <div onclick = "remove(this)" class="circle">
+
+                </div>
+              </div>
+              <div class="text">
+                <h6>Test</h6>
+              </div>
+            </div>
+          </div>
+          <div class="control-buttons">
+            <button id = "button" type="button" name="button" class="button">Add Item</button>
+          </div>
+        </div>
+        <div class="right">
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="../src/reminders.js" charset="utf-8"></script>
+  <script type="text/javascript">
+      //simple script to fill in Username.
+     const elem = document.getElementById('changeText');
+    elem.innerText = memory.get('userName');
+
+    //just a test.
+    const Sortable = require('sortablejs');
+    var sortable = Sortable.create(drag, {
+      animation: 150
+    });
+  </script>
+</html>

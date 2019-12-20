@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/skeleton.css">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/defaultStyle.css">
+    <link rel="stylesheet" href="../style/animate.min.css">
+
+    <title>Productivity</title>
+
+  </head>
+  <body >
+    <form>
+      <div class= "animated fadeIn slow center">
+        <h5>Name</h5>
+          <input keydown = "norm('email')" onchange = "norm('firstName')" onfocus = "norm('firstName')" id = "firstName" type="text" name="firstName" placeholder="Enter First Name">
+          <h5 class="email">Email</h5>
+          <input keydown = "norm('email')" onchange= "norm('email')" onfocus = "norm('email')" id = "email" type="email" name="email" placeholder= "Enter Email">
+          <button id = "submit" onclick = "validate()" value = "Let's Go" type="button" name="button" class="button">Let's Go</button>
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript">
+  const Store = require('electron-store');
+  function validEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+  function norm(idname){
+
+    const obj  = document.getElementById(idname);
+    obj.style.cssText = "background-color: white;border: 1px solid #bbb;";
+    obj.classList.remove('valueClass');
+
+  }
+    function validate(){
+      let bool = true;
+      const name = document.getElementById('firstName');
+      const email = document.getElementById('email');
+      let errorString = "";
+      if(name.value.trim() == ""){
+        name.style.cssText = "background-color: #ee4540;   ";
+        name.value = "";
+        name.placeholder = "Enter First Name"
+        name.classList.add('valueClass');
+        bool = false;
+      }
+      if(email.value.trim() == "" || !validEmail(email.value)){
+        email.style.cssText = "background-color: #ee4540; ";
+        email.value = "";
+        email.placeholder = "Enter Email"
+            email.classList.add('valueClass');
+        bool = false;
+      }
+      if(bool){
+        window.location.replace("index.html");
+        //store in data.
+        const store = new Store();
+        store.set('userName', String(name.value));
+        store.set('email', String(email.value));
+      }
+    }
+
+    document.addEventListener("keypress", function (e){
+      var key = e.which || e.keyCode;
+       if (key === 13) { // 13 is enter
+         validate();
+       }
+    })
+
+
+  </script>
+</html>

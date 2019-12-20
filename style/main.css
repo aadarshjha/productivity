@@ -1,0 +1,147 @@
+/*
+* Custom css file
+*/
+
+body {
+  background-color: #2d132c;
+}
+
+h1, h5 {
+  color: #c72c41;
+}
+
+.user h1 {
+  margin-left: 10px;
+}
+
+.top-bar {
+   display: flex;
+  align-items: center;
+}
+
+
+
+.user {
+
+  /*max size of name*/
+  flex: 1.5;
+
+}
+
+.buttons {
+
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
+
+.innerText:hover {
+  color: #ee4540;
+}
+
+/*
+ * main display region
+ */
+
+ .main-frame {
+
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+ }
+
+.main-div{
+   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+   flex: 1;
+ }
+
+.right {
+   flex: 2;
+ }
+
+ .todo-list {
+
+   transition: all 0.4s ease-out;
+
+    max-height: 320px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .reminder {
+   width: 240px;
+   height: 30px;
+
+   text-transform: none;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+
+ }
+
+ .complete {
+   margin-left: -20px;
+ }
+
+ .circle {
+   height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 1s ease;
+
+ }
+
+ .circle:hover {
+   background-color: #801336;
+ }
+
+ .text {
+   margin: auto;
+   text-align: center;
+    height: 100%;
+   width: 100%;
+   z-index: -1;
+ }
+ .text h6 {
+   margin-top: 3px;
+   margin-left: -140px;
+ }
+
+ .control-buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
+
+ .hidden, .hide {
+   opacity: 0;
+   transition: all 0.5s ease-out;
+ }
+
+ .show {
+   opacity: 1;
+ }
+
+ .fade li {
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  height: 2em;
+}
+.fade li.show {
+  opacity: 1;
+}

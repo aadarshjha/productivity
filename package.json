@@ -1,0 +1,19 @@
+{
+  "name": "Productivity",
+  "version": "1.0.0",
+  "description": "Productivity Application -- Test in Electron",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Aadarsh Jha",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.6"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "electron-store": "^5.1.0",
+    "sortablejs": "^1.10.1"
+  }
+}
