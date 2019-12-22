@@ -1,0 +1,11 @@
+.upcoming{
+  background-color: transparent;
+  width: 238px;
+  height: 124px;
+  position: relative;
+  left: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
