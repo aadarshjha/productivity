@@ -16,7 +16,13 @@ class Memory {
   has(key) {
     return this.memory.has(key);
   }
-
+  delete(key){
+    this.memory.delete(key);
+  }
+  list(){
+    //for debugging.
+    for(let i = 1; i <= 8; ++i){
+      console.log(this.memory.get(String(i))); 
+    }
+  }
 }
-
-let mem = new Memory();
