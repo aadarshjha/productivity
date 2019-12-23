@@ -2,9 +2,78 @@
   background-color: transparent;
   width: 525px;
   height: 200px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
+
+.left-button, .right-button {
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*
+ * manual css
+ */
+.timer-text {
+  position: relative;
+  right: 18px;
+  bottom: 15px;
+}
+
+
+.left-flex {
+  height: 200px;
+  padding: 0;
+  flex: 2;
+  border: none;
+}
+.right-flex {
+  height: 200px;
+  flex: 1.5;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  padding: 0;
+}
+
+.stacks {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 55px;
+  top: 40px;
+}
+
+.left-button {
+  margin-right: 10px;
+}
+
+.right-button {
+}
+
+
+.right-flex div {
+  width: 100px;
+}
+
 .graph {
   background-color: transparent;
   width: 525px;
-  height: 275px;
+  height: 282px;
+  margin-bottom: 0px;
+}
+
+.center-text{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }

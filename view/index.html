@@ -43,10 +43,29 @@
         </div>
         <div class="right">
           <div class="button sessions">
+            <div class="button left-flex">
 
+            </div>
+            <div class="button right-flex">
+               <div class="timer-text">
+                 <h3 id = "timer">00:00:00</h3>
+               </div>
+               <div class="stacks">
+                 <div class="button left-button">
+                   <div class="center-text">
+                     <h6>New</h6>
+                   </div>
+                 </div>
+                 <div class="button right-button">
+                   <div class="center-text">
+                     <h6>Delete</h6>
+                   </div>
+                 </div>
+               </div>
+            </div>
           </div>
           <div class="button graph">
-            <canvas id="myChart" width="590" height="350"></canvas>
+            <canvas id="myChart" width="590" height="320"></canvas>
 
           </div>
 
@@ -55,7 +74,8 @@
     </div>
 
   </body>
-      <script src="../src/chartScript.js" charset="utf-8"></script>
+  <script src="../src/sessionTime.js" charset="utf-8"></script>
+  <script src="../src/chartScript.js" charset="utf-8"></script>
   <script src="../src/reminderFetch.js" charset="utf-8"></script>
   <script src="../src/reminders.js" charset="utf-8"></script>
 
