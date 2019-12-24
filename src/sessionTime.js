@@ -2,6 +2,8 @@ const Timer = require('easytimer.js').Timer;
 const timerPrompt = require('electron-prompt');
 const localMem = new Memory();
 
+let stop = false;
+
 //local sesion counter;
 let sessionCount = 0;
 
@@ -42,7 +44,7 @@ function createSession(){
             }
 
             //push to the graph.
-            addData(initialText, timeMin); 
+            addData(initialText, timeMin);
           }
 
           document.getElementById('sessionName').innerText = r;
@@ -50,6 +52,7 @@ function createSession(){
           timerInst.reset();
           timerInst.start();
           sessionCount = sessionCount + 1;
+          stop = false;
         }
     })
     .catch(console.error);
@@ -63,7 +66,29 @@ function createSession(){
 }
 
 function stopSession(){
-  timerInst.pause();
+
+  if(sessionCount != 0 && !stop){
+    let initialText = document.getElementById('sessionName').innerText;
+    //measures in hours minutes seconds.
+    let timeMin = timerInst.getTimeValues().hours * 60 + timerInst.getTimeValues().minutes + (timerInst.getTimeValues().seconds/60);
+
+    //creating an object: {time,sessionName}
+    let dataObject = {time: timeMin, sessionName: initialText};
+
+    //checking if the memory exists
+    if(!localMem.has("sessionStore")){
+      localMem.store("sessionStore", [dataObject]);
+    } else {
+      let array = localMem.get('sessionStore');
+      array.push(dataObject);
+      localMem.store('sessionStore', array);
+    }
+    //stop timer.
+    timerInst.pause();
+    //push to the graph.
+    addData(initialText, timeMin);
+    stop = true;
+  }
 }
 
 //listen to some buttons
