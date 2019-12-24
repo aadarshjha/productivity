@@ -10,7 +10,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: [],
         datasets: [{
-            label: '# of hours',
+            label: '# of minutes',
             data: [],
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255, 99, 132, 1)',
@@ -32,11 +32,11 @@ var myChart = new Chart(ctx, {
 });
 
 //for each data that is added by the end of a session.
-function addData(){
+function addData(sessionName, time){
 
   myChart.data.labels.push(sessionName);
   myChart.data.datasets.forEach((dataset) => {
-       dataset.data.push(Math.floor(time));
+       dataset.data.push(time);
    });
    myChart.update();
 }

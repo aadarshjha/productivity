@@ -40,6 +40,9 @@ function createSession(){
               array.push(dataObject);
               localMem.store('sessionStore', array);
             }
+
+            //push to the graph.
+            addData(initialText, timeMin); 
           }
 
           document.getElementById('sessionName').innerText = r;
