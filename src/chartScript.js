@@ -1,9 +1,5 @@
 var Chart = require('chart.js');
 
-let plotColors = [];
-
-let lineColors = [];
-
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -24,8 +20,12 @@ var myChart = new Chart(ctx, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+
                 }
+            }],
+            xAxes: [{
+              display: false
             }]
         }
     }
