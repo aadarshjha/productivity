@@ -43,8 +43,13 @@
         </div>
         <div class="right">
           <div class="button sessions">
-            <div class="button left-flex">
-
+            <div class="left-flex">
+              <textarea id ="textBox"  class="modifications" placeholder="Enter note here."></textarea>
+              <div onclick="loadBearWindow(this)" id = "createNote" class="button wrapped-div">
+                <div class="modify left-button center-text">
+                  <h6>New Note</h6>
+                </div>
+              </div>
             </div>
             <div class="button right-flex">
                <div class="timer-text">
@@ -77,6 +82,7 @@
     </div>
 
   </body>
+  <script src="../src/bear.js" charset="utf-8"></script>
   <script src="../src/chartScript.js" charset="utf-8"></script>
   <script src="../src/sessionTime.js" charset="utf-8"></script>
   <script src="../src/reminderFetch.js" charset="utf-8"></script>

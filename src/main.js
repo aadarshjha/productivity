@@ -1,10 +1,12 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain} = require('electron')
 const Store = require('electron-store');
 const store = new Store();
+const {spawn} = require('child_process');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
+let subWin;
 
 function userExists() {
   return (store.has('userName'));
@@ -17,7 +19,7 @@ function createWindow () {
     width: 820,
     height: 600,
     fullscreen: false,
-    maximizable: false, 
+    maximizable: false,
     webPreferences: {
       nodeIntegration: true
     }
@@ -34,6 +36,7 @@ function createWindow () {
   }
 
 
+
   // Open the DevTools.
   win.webContents.openDevTools()
 
@@ -45,6 +48,7 @@ function createWindow () {
     win = null
   })
 }
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
