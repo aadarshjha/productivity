@@ -94,12 +94,12 @@ function remove(context){
 
     removeRem.style.cssText = "opacity: 0; height: 0em; ";
 
-      setTimeout(function(){
-        //gets index of the div content.
-        let childIndex = Array.prototype.indexOf.call(removeRem.parentNode.children, removeRem);
+            setTimeout(function(){
+              //gets index of the div content.
+              let childIndex = Array.prototype.indexOf.call(removeRem.parentNode.children, removeRem);
 
-        //clean up DOM;
-        removeRem.parentNode.removeChild(removeRem.parentNode.children[childIndex]);
+              //clean up DOM;
+              removeRem.parentNode.removeChild(removeRem.parentNode.children[childIndex]);
       }, 500);
   }
 }

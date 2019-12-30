@@ -44,7 +44,9 @@ function createSession(){
             }
 
             //push to the graph.
-            addData(initialText, timeMin);
+            if(!stop){
+              addData(initialText, timeMin);
+            }
           }
 
           document.getElementById('sessionName').innerText = r;
