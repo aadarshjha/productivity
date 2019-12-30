@@ -30,9 +30,10 @@ The easiest way I can think of solving this is using the tables included in GitH
 
 To your specific example it would look something like this:
 
-Solarized dark             |  Solarized Ocean
+Enter a session state           |  Enter a reminder state
 :-------------------------:|:-------------------------:
 ![](res/c.png)  |  ![](res/d.png)
 
 
-<img src = "" alt = "Demo GIF"/> <img src = "" alt = "Demo GIF"/> <img src = "res/e.png" alt = "Demo GIF"/>
+### General UI Design 
+<img src = "res/e.png" alt = "Demo GIF"/>
