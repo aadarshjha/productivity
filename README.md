@@ -25,4 +25,14 @@ There are several aspects to the application:
 * The `Sessions` Clock: This portion of the application is unique in that it allows for the user to time themselves on certain critical tasks that may be taxing or lengthy. This allows for the user to be aware of how much time there are taking generally on distinct tasks that are needed to be completed.
 * The `Chart`: The `Chart` allows for each `Session` to be recorded in a nice UI/scatterplot. THe user can also hover over the data points to get more information to understand their progress on these certain tasks. 
 
-<img src = "res/c.png" alt = "Demo GIF" width = "200px" height = "300px"/> <img src = "res/d.png" alt = "Demo GIF"/> <img src = "res/e.png" alt = "Demo GIF"/>
+
+The easiest way I can think of solving this is using the tables included in GitHub's flavored markdown.
+
+To your specific example it would look something like this:
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](res/c.png)  |  ![](res/d.png)
+
+
+<img src = "" alt = "Demo GIF"/> <img src = "" alt = "Demo GIF"/> <img src = "res/e.png" alt = "Demo GIF"/>
