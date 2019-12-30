@@ -126,6 +126,22 @@ top: 0; right: 0; bottom: 0; left: 0;
   display: none;
 }
 
+.upcoming {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.push-down{
+  margin-bottom: -15px;
+  position: relative;
+  top: 20px; 
+}
+.push-up {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
  .text h6 {
    margin-top: 3px;
    padding-left: 4px;
