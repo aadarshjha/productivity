@@ -26,3 +26,5 @@ There are several aspects to the application:
 * The `Chart`: The `Chart` allows for each `Session` to be recorded in a nice UI/scatterplot. THe user can also hover over the data points to get more information to understand their progress on these certain tasks. 
 
 <img src = "res/c.png" alt = "Demo GIF"/>
+<img src = "res/d.png" alt = "Demo GIF"/>
+<img src = "res/e.png" alt = "Demo GIF"/>
