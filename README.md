@@ -14,7 +14,7 @@ Productivity uses the Electron.js Framework and runs on the Chromium / Node.js e
 
 The goal of its usage is to act as a central hub of critical widgets that are needed to stay on-track. The below GIF demonstrates its functionality at a high-level.  
 
-<img src = "res/demo.gif" alt = "Demo GIF"/>
+<img src = "res/Demo.gif" alt = "Demo GIF"/>
 
 
 
