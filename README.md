@@ -25,8 +25,8 @@ There are several aspects to the application:
 * The `Sessions` Clock: This portion of the application is unique in that it allows for the user to time themselves on certain critical tasks that may be taxing or lengthy. This allows for the user to be aware of how much time there are taking generally on distinct tasks that are needed to be completed.
 * The `Chart`: The `Chart` allows for each `Session` to be recorded in a nice UI/scatterplot. THe user can also hover over the data points to get more information to understand their progress on these certain tasks. 
 
-<div style = "display: flex; flex-direction: row;">
+
   <img src = "res/c.png" alt = "First Demo Image/>
   <img src = "res/d.png" alt = "First Demo Image/>
   <img src = "res/e.png" alt = "First Demo Image/>
-</div>
+
