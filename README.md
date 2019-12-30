@@ -16,5 +16,9 @@ The goal of its usage is to act as a central hub of critical widgets that are ne
 
 <img src = "res/Demo.gif" alt = "Demo GIF"/>
 
+There are several aspects to the application: 
 
+<ul>
+  
+</ul>
 
