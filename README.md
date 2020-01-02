@@ -26,10 +26,6 @@ There are several aspects to the application:
 * The `Chart`: The `Chart` allows for each `Session` to be recorded in a nice UI/scatterplot. THe user can also hover over the data points to get more information to understand their progress on these certain tasks. 
 
 
-The easiest way I can think of solving this is using the tables included in GitHub's flavored markdown.
-
-To your specific example it would look something like this:
-
 Enter a session state           |  Enter a reminder state
 :-------------------------:|:-------------------------:
 ![](res/c.png)  |  ![](res/d.png)
