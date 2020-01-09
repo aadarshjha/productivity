@@ -8,6 +8,8 @@ Productivity is a native Desktop application that serves as a dashboard for prod
 
 Productivity uses the Electron.js Framework and runs on the Chromium / Node.js engine that Electron supplies. Productivity also allows for data persistence through the storage of your critical data in the App Data portion of your system (stored in JSON format). 
 
+On a technical level, this project exercises fundamental JavaScript "classes", constructs, and design patterns. It also includes server-side Node.js code that allows for system-native operations to occur. 
+
 Productivity also utilizes several packages from `NPM`, including Chart, Timer, and CSS boilderplates. 
 
 ### How is it used? 
