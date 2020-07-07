@@ -9,7 +9,7 @@
   "author": "Aadarsh Jha",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.1.7"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
