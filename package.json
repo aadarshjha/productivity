@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "easytimer.js": "^4.1.1",
     "electron-prompt": "^1.4.0",
     "electron-store": "^5.1.0",
